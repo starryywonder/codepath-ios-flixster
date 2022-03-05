@@ -10,7 +10,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 #### REQUIRED (10pts)
 - [x] (5pts) User can tap a cell to see more details about a particular movie.
-- [ ] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+- [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 #### BONUS
 - [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
@@ -23,6 +23,10 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 Describe any challenges encountered while building the app.
+- Ran into a issue where the file was misplaced so it triggered an unrelated error 
+- Accidentally deleted a file, so when placing it back I had to learn to navigate through Xcode ot have it showing in the project navigator
+- Took a while to debug and figure out why images were small in grid view (all it took was to toggle the `aspect fill` button)
+- ran into a outlet problem for MovieGridCell.swift and was using `UIView` instead of `UIImageView`
 
 
 ---
