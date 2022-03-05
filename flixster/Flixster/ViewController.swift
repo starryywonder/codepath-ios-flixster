@@ -17,7 +17,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("Hello")
         
         
         tableView.dataSource = self
@@ -37,11 +36,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                  
                  self.tableView.reloadData() // grabs the movie count which is the last step
                  
-                 print(dataDictionary)
+                 // print(dataDictionary)
 
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
+                    // Get the array of movies
+                    // Store the movies in a property to use elsewhere
+                    // Reload your table view data
 
              }
         }
@@ -74,7 +73,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return cell
     }
-
-
+    
+    // NAVIGATION
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare (for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        // Find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie //referring to line 87 movie
+        
+        tableView.deselectRow(at: indexPath, animated: true) // deselects row so that when you go back it's not selected anymore
+    }
+    
 }
 
