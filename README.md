@@ -17,7 +17,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<img src="https://github.com/starryywonder/codepath-ios-flixster/blob/main/part%202.gif?raw=true" width=480><br>
+<img src="https://github.com/starryywonder/codepath-ios-flixster/blob/main/part%202.gif?raw=true" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
@@ -44,7 +44,7 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthrough GIF
 
-<img src="https://github.com/starryywonder/codepath-ios-flixster/blob/main/Kapture%202022-02-25%20at%2023.13.50.gif?raw=true" width=480><br>
+<img src="https://github.com/starryywonder/codepath-ios-flixster/blob/main/part%201.gif?raw=true" width=480><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
